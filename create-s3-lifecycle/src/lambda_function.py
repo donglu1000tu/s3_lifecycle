@@ -24,9 +24,8 @@ lifecycle_policy = {'Rules': [],}
 
 def lambda_handler(event, context):
     # List all S3 buckets
-    # response = s3.list_buckets()
-    # buckets = response['Buckets']
-    buckets =  [{'Name': 'dang-le-s3-object', 'CreationDate': 10}, {'Name': 'amplify-demoapp-staging-141737-deployment', 'CreationDate': 20}]
+    response = s3.list_buckets()
+    buckets = response['Buckets']
     
     for bucket in buckets:
         bucket_name = bucket['Name']
