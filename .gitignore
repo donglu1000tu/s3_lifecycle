@@ -1,1 +1,5 @@
+*.txt
 *.zip
+*/*.zip
+*test*
+.DS_Store
