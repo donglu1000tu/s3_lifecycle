@@ -1,5 +1,6 @@
 Prerequisites:  
-- AWS SAM latest version  
+- AWS SAM latest version
+    
 Deploy by SAM:  
 1. Go to create-s3-lifecycle/  
 2. Edit 2 parameter:  
